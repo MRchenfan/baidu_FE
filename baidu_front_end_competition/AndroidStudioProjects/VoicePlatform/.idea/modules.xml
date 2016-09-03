@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VoicePlatform.iml" filepath="$PROJECT_DIR$/VoicePlatform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baiduvoice/baiduvoice.iml" filepath="$PROJECT_DIR$/baiduvoice/baiduvoice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cf_calculator/cf_calculator.iml" filepath="$PROJECT_DIR$/cf_calculator/cf_calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layout_test/layout_test.iml" filepath="$PROJECT_DIR$/layout_test/layout_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/section_2/section_2.iml" filepath="$PROJECT_DIR$/section_2/section_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testapp/testapp.iml" filepath="$PROJECT_DIR$/testapp/testapp.iml" />
+    </modules>
+  </component>
+</project>

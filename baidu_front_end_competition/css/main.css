@@ -1,0 +1,73 @@
+*{
+  text-align: center;
+  color:#333;
+  font: 24px "microsoft yahei";
+  margin:0;
+  padding:0;
+}
+nav li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#333;
+}
+a:hover{
+  color:#90F69C;
+}
+
+header{
+  border-bottom: 1px solid #333;
+}
+.main{
+  margin-top: 5px;
+}
+footer{
+  width:100%;
+  position: fixed;
+  bottom:0;
+}
+
+@-webkit-keyframes neon {
+    from {
+        box-shadow: 0 0 10px #66BB6A, 0 0 15px #66BB6A,  0 0 25px #81C784, 0 0 30px #A5D6A7, 0 0 40px #C8E6C9, 0 0 50px #E8F5E9;
+    }
+    to {
+        box-shadow: 0 0 2px #66BB6A, 0 0 10px #66BB6A, 0 0 20px #81C784, 0 0 25px #A5D6A7, 0 0 30px #C8E6C9, 0 0 35px #E8F5E9;
+    }
+}
+
+#speaker {
+
+    display: block;
+
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    margin-left: -2rem;
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 50%;
+    line-height: 100%;
+    padding: 0;
+    outline: none;
+    border: 1px solid #fff;
+
+    background-color: #fff;
+    transition: background-color .5s;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+
+}
+
+#speaker:active {
+    background-color: #999;
+}
+

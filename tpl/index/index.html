@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common/animate.css">
+  <link rel="stylesheet" href="../lib/mobilebone.css">
+  <link rel="stylesheet" href="../lib/mobilebone.animate.css">
+  <script src="../lib/mobilebone.js"></script>
+  <script src="../lib/zepto.min.js"></script>
+</head>
+<body class="viewport-flip">
+  <header>
+    <nav class="nav-bar">
+     <a id="link0" data-rel="auto" class="nav active" href="#page0">
+       <i class="icon-spinner10"></i>
+     </a>
+     <a id="link1" data-rel="auto" class="nav " href="#page1">
+       <i class="icon-calendar"></i>
+     </a>
+     <a id="link2" data-rel="auto" class="nav " href="#page2">
+       <i class="icon-alarm"></i>
+     </a>
+     <a id="link3" data-rel="auto" class="nav " href="#page3">
+       <i class="icon-cog"></i>
+     </a>
+    </nav>
+  </header>
+  <div class="main">
+    <div id="page0" class="page out " data-title="视窗" data-form="slide">
+      <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=2&num=2" width="320" height="70" style="display: block; margin:0 auto;"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <div class="page0-article">
+      这里每天推荐一些新闻或者美文
+      <br><br>
+       <p>
+          于是我们总是向往着自己从未涉足过的世界<br>
+          假装坦然地接受对于坚守追求的褒奖<br>
+          始终不愿意接受一切关于理想现实的辩证关系的云云尔尔<br>
+          在内心中勾画出的某个-topia的感召下<br>
+          不许触碰不许蒙尘不曾外露寄托灵魂至真至纯的一隅月色琉璃地<br>
+          是一抔净土<br>
+       </p>
+
+       </div>
+      <!-- <iframe name="iframe" src="http://www.mrchen573.com" frameborder="0" style="width:100%;height:500px;"></iframe> -->
+    </div>
+    <div id="page1" class="page out " data-title="备忘" data-form="slide">
+    </div>
+    <div id="page2" class="page out " data-title="时钟" data-form="slide">
+      <!-- <canvas id="canvas" style="display:block;margin:0px auto;">
+        当浏览器不支持，会显示我哦~
+      </canvas> -->
+    </div>
+    <div id="page3" class="page out " data-title="设置" data-form="slide">
+      <ul class="config-menu">
+        <li class="login">
+          <a href="" id="config-login">登陆</a></li>
+        <li><a href="" id="config-keyword">唤醒词</a></li>
+        <li><a href="" id="config-notice">提示音</a></li>
+        <li><a href="" id="config-style">更换样式</a></li>
+        <li><a href="" id="config-update">版本更新</a></li>
+        <li><a href="http://www.mrchen573.com/myblog" id="config-callback">意见反馈</a></li>
+        <li><a href="http://www.mrchen573.com" id="config-contact">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="speaker-panel animated bounceInUp" style="display:none;text-align:center;"> 
+      
+      <h2 class="speaker-panel-title">你在说,我在听</h2>
+      <i class="icon-feed" style="font-size:60px;color:#B5B2B2;"></i>
+      <p class="speaker-panel-tips">试着说: 明天几度</p>
+      <p class="speaker-panel-line"></p>
+
+    </div>
+    <div id="speaker" class="">
+      <i class="icon-mic"></i>
+    </div>
+    <div id="speaker-mask" class="speaker-mask" style="display:none;"></div>
+  </footer>
+  <div class="poping animated bounceIn" style="display:none;">
+    <div class="poping-header">
+      <h2>天气</h2>
+    </div>
+    <div class="poping-content">
+      <p>
+          于是我们总是向往着自己从未涉足过的世界<br>
+          假装坦然地接受对于坚守追求的褒奖<br>
+          始终不愿意接受一切关于理想现实的辩证关系的云云尔尔<br>
+          在内心中勾画出的某个-topia的感召下<br>
+          不许触碰不许蒙尘不曾外露寄托灵魂至真至纯的一隅月色琉璃地<br>
+          是一抔净土<br>
+       </p>
+       
+    </div>
+    <div class="poping-footer">
+      <a id="poping-cancel" href="">取消</a>
+    </div>
+  </div>
+  <script src="../lib/require.js" data-main="../js/app"></script>
+</body>
+</html>

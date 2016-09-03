@@ -1,0 +1,1 @@
+include ':app', ':baiduvoice', ':testapp', ':layout_test', ':cf_calculator', ':section_2'

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mrchen573.gridview">
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+        <!-- begin: baidu speech sdk-->
+        <!-- 请填写应用实际的APP_ID -->
+        <meta-data android:name="com.baidu.speech.APP_ID" android:value="8500412"/>
+        <!-- 请填写应用实际的API_KEY -->
+        <meta-data android:name="com.baidu.speech.API_KEY" android:value="aLY2vOSu7TgFvFRGjYFcGy4e"/>
+        <!-- 请填写应用实际的SECRET_KEY -->
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="728d69a59c31283426149ef2d8f5e7e5"/>
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+
+        <activity android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--end of baidu voice-->
+        <activity android:name=".WebViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
